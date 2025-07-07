@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <style>
+        body{
+            font-size:20px ;
+        }
+        h1{
+            text-align: center;
+        }
+        section{
+            border: solid 3px;
+            border-radius:10px ;
+            text-align: center;
+            margin-top:100px ;
+            
+            margin: auto;
+            margin-top:50px ;
+            padding-right:10px ;
+        }
+        select{
+            padding:7px ;
+            font-size:20px ;
+            border-radius:10px ;
+        }
+        button{
+           padding: 10px;
+           border-radius: 7px;
+           margin: 15px;
+
+        }
+        input{
+            margin-top:5px ;
+            padding:10px ;
+            border-radius:10px ;
+        }
+        .re{
+            margin-bottom:10px ;
+        }
+       
+    </style>
+</head>
+<body>
+    <section>
+    <div class="mae">
+    <h1>Tabuada</h1>
+    Digite o número que deseja: <input id="n">
+    <br><br>
+    
+    
+    <select name="opn" id="op">
+        <option value="">Operação Aritmetica</option>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <br><br>
+    <button onclick="calcular()">calcular</button>
+    <button onclick="apagar()" id="limpar">remover</button>
+    </div>
+    <br>
+    <div id="tab" class="re"></div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
